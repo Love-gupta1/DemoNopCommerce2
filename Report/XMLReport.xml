@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.217">
+    <testcase classname="RegisterPage" name="Successful Register With Valid Credentials" time="5.854">
+        <failure message="in is null" type="java.lang.NullPointerException"><![CDATA[Given User is on Register Page..............................................passed
+When user enter the Details.................................................failed
+And user click on Register button...........................................skipped
+Then user navigate to Homepage..............................................skipped
+
+StackTrace:
+java.lang.NullPointerException: in is null
+	at java.base/java.util.zip.ZipInputStream.<init>(ZipInputStream.java:103)
+	at java.base/java.util.zip.ZipInputStream.<init>(ZipInputStream.java:82)
+	at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:83)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:267)
+	at org.apache.poi.util.PackageHelper.open(PackageHelper.java:39)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:204)
+	at Page.Login.login(Login.java:33)
+	at StepDefinition.UserRegistartionTest.user_enter_the_Details(UserRegistartionTest.java:20)
+	at ✽.user enter the Details(file:///C:/Users/LoveGupta/IdeaProjects/DemoNopCommerce2/src/test/java/Feature/Register.feature:4)
+]]></failure>
+    </testcase>
+</testsuite>

@@ -8,7 +8,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -21,7 +20,6 @@ public class Computer {
 
     public static String path;
     int number;
-
     By computers = By.linkText("Computers");
     By notebooks = By.linkText("Notebooks");
     By product = By.xpath("//div[@class='item-box']");
@@ -50,7 +48,6 @@ public class Computer {
         this.driver = driver;
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
-
     public void computerNotebook() {
         driver.findElement(computers).click();
         driver.findElement(notebooks).click();
@@ -63,7 +60,6 @@ public class Computer {
         String actual = driver.findElement(productVerify).getText();
         Assert.assertEquals(actual.equals("AS_551_LP"), "Expected result does not match with actual result");
     }
-
     public void checkout() {
         driver.findElement(radioInput).click();
         driver.findElement(checkout).click();
@@ -95,12 +91,10 @@ public class Computer {
         driver.findElement(faxNumber).sendKeys(faxNumberCell);
         driver.findElement(continueButton).click();
     }
-
     public void shippingMethod() {
         wait.until(ExpectedConditions.elementToBeClickable(shippingMethodContinueButton));
         driver.findElement(shippingMethodContinueButton).click();
     }
-
     public void paymentMethod() {
         wait.until(ExpectedConditions.elementToBeClickable(paymentMethodContinueButton));
         driver.findElement(paymentMethodContinueButton).click();

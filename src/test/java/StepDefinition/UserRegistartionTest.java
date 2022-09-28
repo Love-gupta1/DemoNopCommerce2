@@ -1,6 +1,5 @@
 package StepDefinition;
 
-
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -14,13 +13,11 @@ public class UserRegistartionTest extends BaseClass {
     public void user_is_on_Register_page() {
         setup();
     }
-
     @When("user enter the Details")
     public void user_enter_the_Details() throws IOException {
         pageFactory.getLogin().login();
 
     }
-
     @And("user click on Register button")
     public void user_click_on_Register_button() {
         pageFactory.getUserRegisteration().UserClickOnTheRegisterButton();
@@ -30,8 +27,5 @@ public class UserRegistartionTest extends BaseClass {
     public void user_is_on_Homepage() {
         pageFactory.getUserRegisteration().UserIsOnHomepage();
     }
-
-    {
-
-    }
 }
+

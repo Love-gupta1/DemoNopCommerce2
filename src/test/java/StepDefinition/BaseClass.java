@@ -12,8 +12,6 @@ import org.testng.annotations.Parameters;
 public class BaseClass {
     public static WebDriver driver;
     protected static PageFactory pageFactory;
-
-
     @BeforeClass
     public void setup(){
         WebDriverManager.chromedriver().setup();
@@ -36,7 +34,6 @@ public class BaseClass {
 //            pageFactory = new PageFactory(driver);
 //        }
 //    }
-
     @AfterClass
     public static void close() {
         driver.quit();

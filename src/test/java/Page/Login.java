@@ -5,7 +5,6 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -13,7 +12,6 @@ import java.io.IOException;
 public class Login {
     WebDriver driver;
     public static String path;
-
     By login = By.linkText("Log in");
     By email = By.xpath("//input[@class='email']");
     By password = By.xpath("//input[@class='password']");
